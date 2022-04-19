@@ -14,7 +14,7 @@ apiVersion: v1
 kind: PersistentVolume
 metadata:
   name: """+namespace+"""eks-pv-"""+volid+"""
-  namespace: """+namespace+"""-eks
+  namespace: """+namespace+"""-new
   annotations:
     kubernetes.io/createdby: aws-ebs-dynamic-provisioner
     pv.kubernetes.io/bound-by-controller: "yes"
