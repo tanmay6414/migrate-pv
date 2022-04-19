@@ -22,11 +22,11 @@ def copysnap(snaplists):
             snapAZ = "us-east-2c"
         print('Copying Snapshot -> ' + snapshots["snapid"])
         response = conn.copy_snapshot(
-        Description='Snapshot copied from us-east-1 pmi-edge ' + snapshots["snapid"],
+        Description='Snapshot copied from us-east-1 my-namespace ' + snapshots["snapid"],
         DestinationRegion='us-east-2',
         SourceRegion='us-east-1',
         Encrypted=True,
-        KmsKeyId='ab469db8-01dc-4822-8ec0-dd4420a94c83',
+        KmsKeyId='ab469db8-89ab-4822-7ce1-dd4420a94c83',
         TagSpecifications=[
         {
             'ResourceType': 'snapshot',
