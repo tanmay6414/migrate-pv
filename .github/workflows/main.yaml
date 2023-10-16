@@ -10,15 +10,12 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v3
-        with:
-          repository: tanmay6414/migrate-pv
-          path: ./
 
       - name: read-yaml-file
         uses: pietrobolcato/action-read-yaml@1.0.0
         id: read_action_js
         with:
-          config: migrate-pv/config.yaml
+          config: ${{ github.workspace }}/config.yaml
 
       - name: use-yaml-file
         run: |
